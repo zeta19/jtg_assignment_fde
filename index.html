@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="company-logo">COMPANY LOGO</div>
+      <div id="nav-links">
+        <ul id="links">
+          <li class="nav-list"><a href="#">Products</a></li>
+          <li class="vertical"></li>
+          <li class="nav-list"><a href="#">Resources</a></li>
+          <li class="vertical"></li>
+          <div id="cart">
+            <li class="nav-list"><a href="#">My Account</a></li>
+            <li class="vertical"></li>
+            <li class="nav-list"><a href="#">Cart(0)</a></li>
+          </div>
+        </ul>
+        <div id="credit-advisor">
+          <p>Talk to a credit advisor</p>
+          <p id="phone-number">8888888888</p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="padded">
+        <div id="main-header">
+          <div class="row" id="main-header-elements">
+            <p>HOME</p>
+            <img src="./assests/images/breadcrumb_arrow.png" alt="." />
+            <p>Search</p>
+            <img src="./assests/images/breadcrumb_arrow.png" alt="." />
+            <p>Marketplace</p>
+            <img src="./assests/images/breadcrumb_arrow.png" alt="." />
+            <p>Pharmaceutical</p>
+            <img src="./assests/images/breadcrumb_arrow.png" alt="." />
+            <p>Product delivery</p>
+          </div>
+          <div id="header-logo" class="row-space-around">
+            <div>
+              <img
+                src="./assests/images/logo.png"
+                alt="."
+                style="width: 200px"
+              />
+            </div>
+            <div class="column">
+              <div class="row">
+                <input class="search-input" type="text" />
+                <img
+                  src="./assests/images/search.png"
+                  alt=""
+                  style="height: 35px; padding-left: 5px"
+                />
+              </div>
+              <div style="padding: 5px 0px 0px 0px">
+                <p>
+                  Search for in-depth information on 8,562 products and services
+                  across
+                </p>
+                <p>formulation and manufacturing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="slider">
+          <div class="slider-container">
+            <div class="slider-track" id="slider-track">
+              <div class="slider-item">
+                <img
+                  src="./assests/images/cycle_img1.png"
+                  class="slider-img"
+                  alt="."
+                />
+                <div class="slider-text" id="nav-container">
+                  <p class="slider-header">Glass containers and beakers</p>
+                  <p class="slider-header-below">Adaphi Coldstream</p>
+                </div>
+              </div>
+              <div class="slider-item">
+                <img
+                  src="./assests/images/cycle_img2.png"
+                  class="slider-img"
+                  alt="."
+                />
+                <div class="slider-text" id="nav-container">
+                  <p class="slider-header">Man wearing mask</p>
+                  <p class="slider-header-below">Adaphi Coldstream</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span id="nav-dots">
+            <div class="dots" id="1"></div>
+            <div class="dots" id="2"></div>
+          </span>
+        </section>
+      </div>
+    </main>
+
+    <script src="./assests/js/slider.js"></script>
+    <script src="./assests/js/modal.js"></script>
+  </body>
+</html>

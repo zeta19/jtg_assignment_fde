@@ -1,0 +1,231 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 0.51px;
+  overflow-x: hidden;
+  position: relative;
+  font-size: calc(0.73vh+0.73vw);
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background-image: url(./assests/images/bkg.png);
+  width: 100%;
+  height: 100%;
+}
+
+#navbar {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  /* padding: 0px 150px 0px 150px; */
+  justify-content: space-around;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: block;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+li.vertical {
+  border-left: 2px solid rgba(0, 132, 255, 0.959);
+  height: 11px;
+  margin-top: 6px;
+}
+
+.padded {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+
+.row-space-around {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* flex-basis: 100%; */
+  /* flex: 1; */
+}
+
+.search-input {
+  border-radius: 10px;
+  padding: 10px;
+  height: 15px;
+  width: 320px;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 1s;
+}
+
+.slider-item {
+  min-width: 100% !important;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-img {
+  object-fit: cover;
+  width: 100%;
+}
+.slider-text {
+  position: absolute;
+  top: 240px;
+  padding: 10px 0px 0px 15px;
+}
+
+.slider-header {
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+
+.slider-header-below {
+  font-size: 8px;
+  color: white;
+  font-weight: 300;
+}
+
+.dots {
+  min-width: 5px !important;
+  height: 5px !important;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #aeb4ac;
+}
+
+.dots.active-nav {
+  background-color: #ffffff;
+}
+
+#main-header {
+  background-color: #0c6390;
+  height: auto;
+  color: white;
+  font-size: 10px;
+}
+
+#company-logo {
+  font-size: x-large;
+  font-weight: bold;
+  color: red;
+  background-color: whitesmoke;
+  padding-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#cart {
+  display: block;
+  float: left;
+  background-color: whitesmoke;
+}
+
+#credit-advisor {
+  font-size: x-small;
+  padding: 30px 0 5px 5px;
+  float: right;
+}
+
+#links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: rgba(0, 132, 255, 0.959);
+  font-weight: 500;
+}
+
+#call {
+  display: block;
+  float: left;
+}
+
+#main-header-elements {
+  padding: 9px 0px 0px 10px;
+}
+
+#main-header-elements > p {
+  padding: 0 5px 5px 0;
+}
+
+#main-header-elements > img {
+  padding: 0 5px 5px 0;
+}
+
+#phone-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 132, 255, 0.959);
+}
+
+#header-logo {
+  background-image: url(./assests/images/search_bk.png);
+  height: 125px;
+}
+
+#nav-container {
+  position: absolute;
+  background-color: rgba(39, 38, 38, 0.6);
+  width: 100%;
+  height: 40px;
+  top: 221px;
+  color: white;
+}
+
+#nav-dots {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  display: flex;
+}

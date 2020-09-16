@@ -34,6 +34,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #297399;
 }
 
 li {
@@ -45,14 +46,29 @@ li {
 }
 
 li.vertical {
-  border-left: 2px solid rgba(0, 132, 255, 0.959);
+  border-left: 2px solid #297399;
   height: 11px;
   margin-top: 6px;
+}
+
+h4 {
+  margin: 0;
+}
+
+hr {
+  border-top: 0.25px solid rgb(238, 235, 235);
+  /* width: 80%; */
+  width: 100%;
+  margin: 6px 4px 6px 4px;
 }
 
 .padded {
   padding-left: 150px;
   padding-right: 150px;
+}
+
+.padding-small {
+  padding: 0px 10px 0 10px;
 }
 
 .row {
@@ -71,9 +87,27 @@ li.vertical {
   align-items: center;
 }
 
+.row-space-between {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .column {
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* flex-basis: 100%; */
+  /* flex: 1; */
+}
+
+.column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   /* flex-wrap: wrap; */
   /* flex-basis: 100%; */
   /* flex: 1; */
@@ -111,6 +145,7 @@ li.vertical {
   min-width: 100% !important;
   margin: 0 auto;
   position: relative;
+  /* height: 100%; */
 }
 
 .slider-img {
@@ -119,7 +154,8 @@ li.vertical {
 }
 .slider-text {
   position: absolute;
-  top: 240px;
+  /* top: 240px; */
+  bottom: 0px;
   padding: 10px 0px 0px 15px;
 }
 
@@ -147,6 +183,84 @@ li.vertical {
 
 .dots.active-nav {
   background-color: #ffffff;
+}
+
+.sidebar {
+  background-color: #fafafa;
+  padding: 10px 10px 10px 10px;
+  height: 280px;
+  flex-basis: 20%;
+}
+
+.sidebar-header {
+  margin: 0;
+  color: #297399;
+  font-size: small;
+}
+
+.sidebar-content {
+  font-size: x-small;
+  font-weight: 600;
+}
+
+.sidebar-content > p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card {
+  background-color: #fafafa;
+  margin: 0 0 0 15px;
+  padding: 10px 20px 10px 20px;
+  height: 280px;
+  flex-basis: 80%;
+}
+
+.card-content {
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+}
+
+.card-column {
+  flex-basis: 50%;
+}
+
+.card-header {
+  margin: 0;
+  color: #297399;
+  font-size: small;
+}
+
+.card-header > a {
+  margin: 0;
+  color: #297399;
+  font-size: x-small;
+  font-weight: 500;
+}
+
+.company-name {
+  font-size: x-small;
+  font-weight: 600;
+}
+
+.company-info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.company-desc {
+  font-size: xx-small;
+  font-weight: 400;
+}
+
+.more-company {
+  font-size: xx-small;
+  font-weight: 500;
+}
+.ad-card {
+  padding: 14px 10px 14px 10px;
+  background-color: #ecf9fe;
+  justify-content: center;
 }
 
 #main-header {
@@ -206,7 +320,7 @@ li.vertical {
 #phone-number {
   font-size: 20px;
   font-weight: 600;
-  color: rgba(0, 132, 255, 0.959);
+  color: #297399;
 }
 
 #header-logo {
@@ -219,7 +333,8 @@ li.vertical {
   background-color: rgba(39, 38, 38, 0.6);
   width: 100%;
   height: 40px;
-  top: 221px;
+  /* top: 365px; */
+  bottom: 4px;
   color: white;
 }
 
@@ -228,4 +343,14 @@ li.vertical {
   bottom: 20px;
   right: 40px;
   display: flex;
+}
+
+#main-content {
+  /* height: 100%; */
+  /* width: 100%; */
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  margin: 0;
+  background-color: white;
 }

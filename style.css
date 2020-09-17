@@ -189,7 +189,8 @@ hr {
   background-color: #fafafa;
   padding: 10px 10px 10px 10px;
   /* height: 280px; */
-  flex-basis: 27%;
+  /* flex-basis: 27%; */
+  min-width: 140px;
 }
 
 .sidebar-header {
@@ -271,6 +272,37 @@ hr {
 .article-date {
   font-size: x-small;
   color: rgb(194, 191, 191);
+}
+
+.play-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.bottom-ad {
+  background-color: #ecf9fe;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.bottom-ad-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 #main-header {

@@ -13,8 +13,8 @@ body {
 
 main {
   background-image: url(./assests/images/bkg.png);
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
 #navbar {
@@ -75,7 +75,7 @@ hr {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
-  width: 100%;
+  /* width: 100%; */
 }
 
 .row-space-around {
@@ -188,8 +188,8 @@ hr {
 .sidebar {
   background-color: #fafafa;
   padding: 10px 10px 10px 10px;
-  height: 280px;
-  flex-basis: 20%;
+  /* height: 280px; */
+  flex-basis: 27%;
 }
 
 .sidebar-header {
@@ -212,8 +212,8 @@ hr {
   background-color: #fafafa;
   margin: 0 0 0 15px;
   padding: 10px 20px 10px 20px;
-  height: 280px;
-  flex-basis: 80%;
+  /* height: 280px; */
+  /* flex-basis: 80%; */
 }
 
 .card-content {
@@ -238,7 +238,7 @@ hr {
   font-weight: 500;
 }
 
-.company-name {
+.card-content-header {
   font-size: x-small;
   font-weight: 600;
 }
@@ -248,7 +248,7 @@ hr {
   padding-bottom: 10px;
 }
 
-.company-desc {
+.card-content-desc {
   font-size: xx-small;
   font-weight: 400;
 }
@@ -261,6 +261,16 @@ hr {
   padding: 14px 10px 14px 10px;
   background-color: #ecf9fe;
   justify-content: center;
+}
+
+.vertical-line {
+  border-left: 1px solid rgb(194, 191, 191);
+  height: 12px;
+}
+
+.article-date {
+  font-size: x-small;
+  color: rgb(194, 191, 191);
 }
 
 #main-header {

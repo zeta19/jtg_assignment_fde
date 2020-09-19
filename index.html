@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JTG ASSIGNMENT</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -11,26 +11,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="navbar">
-      <div id="company-logo">COMPANY LOGO</div>
-      <div id="nav-links">
-        <ul id="links">
-          <li class="nav-list"><a href="#">Products</a></li>
-          <li class="vertical"></li>
-          <li class="nav-list"><a href="#">Resources</a></li>
-          <li class="vertical"></li>
-          <div id="cart">
-            <li class="nav-list"><a href="#">My Account</a></li>
-            <li class="vertical"></li>
-            <li class="nav-list"><a href="#">Cart(0)</a></li>
+    <div class="padded">
+      <div class="row" id="navbar" style="justify-content: space-between">
+        <div id="company-logo">
+          <img src="./assests/images/logoAsset_1.png" alt="." />
+        </div>
+
+        <div class="column" style="align-items: flex-end">
+          <div class="row" id="nav-links">
+            <ul class="row" id="links">
+              <li class="nav-list"><a href="#">Products</a></li>
+              <li class="vertical"></li>
+              <li class="nav-list"><a href="#">Resources</a></li>
+              <li class="vertical"></li>
+              <div class="row" id="cart">
+                <li class="nav-list"><a href="#">My Account</a></li>
+                <li class="vertical"></li>
+                <li class="nav-list"><a href="#">Cart(0)</a></li>
+              </div>
+            </ul>
           </div>
-        </ul>
-        <div id="credit-advisor">
-          <p>Talk to a credit advisor</p>
-          <p id="phone-number">8888888888</p>
+          <div id="credit-advisor">
+            <div class="row">
+              <img
+                src="./assests/images/telephoneAsset 2.png"
+                alt="."
+                style="padding-right: 10px"
+              />
+              <div class="column">
+                <p>Talk to a credit advisor</p>
+                <p id="phone-number">1.800.700.2733</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <main>
       <div class="padded">
         <div id="main-header">
@@ -59,7 +76,7 @@
                 <img
                   src="./assests/images/search.png"
                   alt=""
-                  style="height: 35px; padding-left: 5px"
+                  style="height: 40px; padding-left: 5px"
                 />
               </div>
               <div style="padding: 5px 0px 0px 0px">
@@ -219,7 +236,7 @@
               <div class="side-ad-bar">
                 <img src="./assests/images/ad_160x600.png" alt="." />
               </div>
-              <div class="column">
+              <div class="column" style="flex: 1">
                 <div class="column card" style="flex-basis: 0%">
                   <div class="row-space-between card-header">
                     <h4>Featured Articles</h4>
@@ -677,6 +694,20 @@
           </div>
         </section>
       </div>
+
+      <div id="modal">
+        <div id="modal-content">
+          <div id="modal-close">X</div>
+
+          <h2 class="text-green" id="modal-heading">
+            Title of the video goes here
+          </h2>
+          <img src="" alt="." width="100%" id="modal-img" />
+          <div class="next paginate-button" id="modal-next">></div>
+          <div class="prev paginate-button" id="modal-prev"><</div>
+        </div>
+        <div id="overlay"></div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -719,6 +750,12 @@
           <a href="#" class="footer-category-details">Glossary</a>
           <a href="#" class="footer-category-details">Privacy Policy</a>
           <a href="#" class="footer-category-details">Terms of Service</a>
+        </div>
+
+        <div class="vertical-line" style="height: 200px"></div>
+
+        <div class="footer-companies">
+          <img src="./assests/images/footer_icons.png" alt="." />
         </div>
       </div>
     </footer>

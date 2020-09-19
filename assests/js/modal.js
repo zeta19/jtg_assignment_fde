@@ -3,9 +3,10 @@ const modal = document.getElementById("modal");
 const modalClose = document.getElementById("modal-close");
 const modalHeading = document.getElementById("modal-heading");
 const modalImage = document.getElementById("modal-img");
-var currentModal = 0;
 const modalNext = document.getElementById("modal-next");
 const modalPrev = document.getElementById("modal-prev");
+
+var currentModal = 0;
 
 modalOverlay.addEventListener("click", (e) => {
   modal.style.display = "none";
